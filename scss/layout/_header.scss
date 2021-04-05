@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.navbar-custom {
+    background-color: $brand-color;
+    .nav-link  {
+        color:white;
+    }    
+
+}

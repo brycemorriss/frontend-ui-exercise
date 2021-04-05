@@ -1,3 +1,39 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';
+
 // Override Bootstrap's Sass default variables
 //
 // Nearly all variables in Bootstrap are written with the `!default` flag.
@@ -18,7 +54,7 @@
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
@@ -29,25 +65,25 @@ $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #7952b3;
+// $body-color: #333;
+// $body-bg: #fff;
+// $border-radius: .4rem;
+// $success: #7952b3;
 
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
+// @import "bootstrap/scss/functions"; // Required
+// @import "bootstrap/scss/variables"; // Required
+// @import "bootstrap/scss/mixins"; // Required
 
-@import "bootstrap/scss/root"; // Required
-@import "bootstrap/scss/reboot"; // Required
-@import "bootstrap/scss/type";
+// @import "bootstrap/scss/root"; // Required
+// @import "bootstrap/scss/reboot"; // Required
+// @import "bootstrap/scss/type";
 // @import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
@@ -63,14 +99,14 @@ $success: #7952b3;
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+// @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/utilities";
+// @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
 
@@ -86,6 +122,14 @@ $success: #7952b3;
   fill: currentColor;
 }
 
-// Header 
+// Company info section
 
+.company-info {
+  background-color: #eee;
+}
+
+.main-footer  {
+  background-color: $brand-color;
+  color:white;
+}
 
