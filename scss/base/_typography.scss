@@ -5,3 +5,37 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 600;
+}
+
+h2 {
+  color: $brand-gold;
+  font-size: 2.625rem;
+  margin-bottom: 30px !important;
+  line-height: 2.75rem;
+}
+
+h4 {
+  font-weight: 600;
+  color: $brand-gold;
+  text-transform: uppercase;
+}
+
+.navbar-custom {
+  .nav-link  {
+    list-style-type: none;
+    height: inherit;
+    transition: background-color .3s ease;
+    border-top: 4px solid rgba(0,0,0,0);
+    font-size: 1.1875rem;
+    font-weight: 600;
+    padding-bottom: 4px;
+    a {
+      text-transform: uppercase;
+    }
+  }    
+
+}

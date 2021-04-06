@@ -8,11 +8,11 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Titillium Web', sans-serif;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$code-font-stack: 'Titillium Web', sans-serif;
 
 
 
@@ -26,9 +26,17 @@ $text-color: rgb(34, 34, 34) !default;
 /// @type Color
 $brand-color: #282932;
 
+/// Main brand color
+/// @type Color
+$brand-blue: #26a9e7;
+
+/// Main brand color
+/// @type Color
+$brand-gold: #A99B6D;
+
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: #f4f4f4;
 
 /// Medium grey
 /// @type Color
@@ -38,9 +46,8 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
-
-
-
+$primary:       $brand-color;
+$secondary:     $brand-gold;
 
 /// Container's maximum width
 /// @type Length
